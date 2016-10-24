@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DBYCZIo</title>
+  <title>DBYCZ.IO</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -14,10 +14,10 @@
       <hr class="clear" />
       <div class="col-lg-2">
         <ul>
-          <li class="sidelink"><%= link_to "ABOUT", root_path %></li>
-          <li class="sidelink"><%= link_to "PROJECTS", projects_path %></li>
-          <li class="sidelink"><%= link_to "SKILLS", skills_path %></li>
-          <li class="sidelink"><%= link_to "CONTACT", contacts_path %></li>
+          <li class="sidelink"><%= active_link_to "ABOUT", 'welcome', :active => true %></li>
+          <li class="sidelink"><%= active_link_to "PROJECTS", 'projects', :active => true %></li>
+          <li class="sidelink"><%= active_link_to "SKILLS", 'skills', :active => true %></li>
+          <li class="sidelink"><%= active_link_to "CONTACT", 'contacts', :active => true %></li>
         </ul>
       </div>
       
