@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "welcome";
+
+.logo {
+  float: left;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  margin: 25px 0 0;
+  border-top-right-radius: 25px;
+}
+
+.logodesc {
+  margin: 45px 0 0 10px;
+  padding: 0;
+  float: left;
+}
+
+.clear {
+  border-width: 1px;
+  border-color: black;
+  clear: both;
+  margin: 0 0 15px 0;
+}
+
+h1 {
+  font-family: Lato;
+  font-size: 2em;
+  
+}
+
+p {
+  font-family: Raleway;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidelink {
+  font-family: Lato;
+  font-size: 2em;
+}

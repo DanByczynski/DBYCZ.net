@@ -5,10 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100|Raleway:100|Quicksand:300" rel="stylesheet">
 </head>
-<body>
+  <body>
+    <div class="container">
+      <h1 class="logo">DBYCZ.IO</h1>
+      <p class="logodesc">Daniel Byczynski - Web Application Developer</p>
+      <hr class="clear" />
+      <div class="col-lg-2">
+        <ul>
+          <li class="sidelink"><%= link_to "ABOUT", root_path %></li>
+          <li class="sidelink"><%= link_to "PROJECTS" %></li>
+          <li class="sidelink"><%= link_to "SKILLS" %></li>
+          <li class="sidelink"><%= link_to "CONTACT" %></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-10">
+        <%= yield %>
+      </div>
 
-<%= yield %>
 
-</body>
+    </div>
+  </body>
 </html>
